@@ -1,7 +1,8 @@
-﻿namespace program
+using System;
+namespace program
 {
     internal class Program
-    { }
+    { 
         static void Main (string[] args)
         {
 
@@ -79,7 +80,7 @@ class Guitar : Instrument
 
     public void Play()
     {
-        Console.WriteLine($"Играет гитара с {stringsCount} струнами");
+        Console.WriteLine("Играет гитара со следующими характеристиками = "+stringsCount);
     }
 }
 class Drum : Instrument
@@ -92,7 +93,7 @@ class Drum : Instrument
 
     public void Play()
     {
-        Console.WriteLine($"Играет барабан, объём которого: {size} см");
+        Console.WriteLine("Играет барабан со следующими характеристиками = "+size);
     }
 }
 class Trumpet : Instrument
@@ -105,7 +106,7 @@ class Trumpet : Instrument
 
     public void Play()
     {
-        Console.WriteLine($"Играет труба с высотой: {diameter} см");
+        Console.WriteLine("Играет труба со следующими характеристиками = "+diameter);
     }
 }
-
+}
